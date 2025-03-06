@@ -1,12 +1,13 @@
 import React from 'react'
 import SignUp from './components/form/Form'
 import './App.css'
-import { ToastContainer } from 'react-toastify'
+import { Toaster } from 'react-hot-toast'
+
 
 export default function App() {
   return (
     <div>
-      <ToastContainer position='top-center'/>
+   <Toaster position="top-center" reverseOrder={false} />
         <SignUp/>
     </div>
   )
